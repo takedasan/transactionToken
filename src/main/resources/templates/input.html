@@ -2,9 +2,13 @@
 <html lang="en"  xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8" />
-    <title>編集ページ</title>
+    <title>入力ページ</title>
 </head>
 <body>
+<form method="post" th:action="@{/submit}">
+    <h1>入力！</h1>
+    <button type="submit">確認画面へ</button>
+</form>
 
 </body>
 </html>

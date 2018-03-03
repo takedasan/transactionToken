@@ -41,10 +41,12 @@ repositories {
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-thymeleaf')
+	compile('org.springframework.boot:spring-boot-starter-security')
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile("com.fasterxml.jackson.module:jackson-module-kotlin:2.9.2")
 	compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}")
 	compile("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
 	compile group: 'org.terasoluna.gfw', name: 'terasoluna-gfw-web', version: '5.4.1.RELEASE'
+	compile group: 'net.sourceforge.nekohtml', name: 'nekohtml', version: '1.9.22'
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
